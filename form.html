@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulários</title>
+    <style>
+        body{
+            background-color: darkslateblue;
+        }
+    </style>
+</head>
+<body>
+    <form name="signup" onsubmit="alert('foi!')" autocomplete="off" target="_blank" method="post" action="#">
+        Nome: <input type="text" name="name"/><br>
+        Idade: <input type="number" name="age"/><br>
+        Senha: <input type="password" name="password"/><br>        
+        <button type="button" onclick="alert('Clicado no botão!')">Botão</button>
+        <button type="reset">Limpar</button>
+        <button type="submit">Enviar</button> <!-- Respeita o botão enter do teclado -->
+    </form>
+
+    <form>
+        <label for="">Text:</label><input type="text"><br>
+        <label for="">Number</label><input type="number" min="0" max="99" step="5"><br>
+        <label for="">Range:</label><input type="range" name="" id=""><br>
+        <label for="">Color:</label><input type="color" name="" id=""><br>
+        <label for="">E-mail:</label><input type="email" name="" id=""><br>
+        <label for="">Url:</label><input type="url" name="" id=""><br>
+        <label for="">Date:</label><input type="date" name="" id=""><br>
+        <label for="">Week:</label><input type="week" name="" id=""><br>
+        <label for="">Month:</label><input type="month" name="" id=""><br>
+        <label for="">Checkbox:</label><input type="checkbox" name="" id=""><br>
+        <label for="">Radio:</label><input type="radio" name="" id=""><br>
+        <label for="">Hidden:</label><input type="hidden" name=""><br>
+        <label for="">File:</label><input type="file" name="" id="" multiple><br>
+        <label for="">Search:</label><input type="search" name="" id=""><br>
+        <label for="">Button:</label><input type="submit" value="Enviar"><br>
+    </form>
+
+    <form method="get" action="#">
+        <p>Qual opcional?</p>
+        <input type="checkbox" name="opcionais[]" id="" value="queijo">+ Queijo <br>
+        <input type="checkbox" name="opcionais[]" id="" value="calabresa">+ Calabresa <br>
+        <input type="checkbox" name="opcionais[]" id="" value="cebola">+ Cebola <br>
+        <input type="checkbox" name="opcionais[]" id="" value="azeitona">+ Azeitona <br>
+        <p>Borda recheada?</p>
+        <input type="radio" name="borda" value="sim" id="">Sim <br>        
+        <input type="radio" name="borda" value="nao" id="">Não <br>
+        <p>Bebida?</p>        
+        <input type="radio" name="bebida" value="refrigerante" id="">Refrigerante <br>        
+        <input type="radio" name="bebida" value="suco" id="">Suco <br>    
+        <input type="radio" name="bebida" value="cerveja" id="">Cerveja <br>
+        <label for="">Button:</label><input type="submit" value="Enviar"><br>
+    </form>
+
+    <form action="" method="get">
+        <label for="">Nome:</label><input type="text" name="name" id=""><br>
+        <label for="">Cargo:</label>
+        <select name="role" id="">
+            <option value="" id="">Selecione o Cargo</option>
+            <option selected value="gerente" id="">Gerente</option>
+            <option value="diretor" id="">Diretor</option>
+            <option value="presidente" id="">Presidente</option>
+        </select>
+        <label for="">Assunto:</label><input type="text" name="subject" id=""><br>        
+        <label for="">Mensagem</label><textarea name="mensage" id="" cols="30" rows="5" ></textarea>
+        <button type="submit">Enviar</button>
+    </form>
+</body>
+</html>

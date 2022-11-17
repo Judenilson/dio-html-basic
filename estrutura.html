@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estrutura</title>
+    <style>
+        body{
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            padding: 0 10% 2% 10%;
+            background-color: rgb(24, 15, 37);
+            color: rgb(121, 84, 206);
+        }
+        .row{
+            margin: 5px;
+        }
+        label{
+            width: 100px;
+            text-align: right;
+            display: inline-block;
+            padding-right: 5px;
+        }
+        input{
+            background-color: transparent;
+            border-style: solid;
+            border-radius: 5px;
+            border-width: 1px;
+            color: greenyellow;
+        }
+        input:focus{
+            background-color: rgb(53, 15, 109);
+        }
+        fieldset{
+            border-width: 5px;
+            border-style: solid;
+            margin: 15px 0;
+            border-radius: 10px;
+            border-color: rgb(150, 136, 167);
+        }
+    </style>
+</head>
+<body>
+    <h2>Formulário de Cadastro</h2>
+    <form action="#">
+        <fieldset>
+            <legend>Dados Pessoais</legend>
+            <div class="row">
+                <label for="">Nome:</label><input type="text" name="" id="">
+                <label for="">E-mail:</label><input type="text" name="" id="">
+            </div>            
+            <div class="row">
+                <label for="">Profissão:</label><input type="text" name="" id="">
+                <label for="">Empresa:</label><input type="text" name="" id="">
+            </div>
+        </fieldset>
+        <fieldset>
+            <legend>Endereço</legend>
+            <div class="row">
+                <label for="">Rua:</label><input type="text" name="" id="">
+                <label for="">Número:</label><input type="number" name="" id="">
+            </div>            
+            <div class="row">
+                <label for="">Bairro:</label><input type="text" name="" id="">
+                <label for="">Cidade:</label><input type="text" name="" id="">
+            </div>  
+            <div class="row">
+                <label for="">UF:</label><input type="text" name="" id="">
+                <label for="">CEP:</label><input type="number" name="" id="">
+            </div>
+        </fieldset>        
+        <fieldset>
+            <legend>Informações de Contato</legend>
+            <div class="row">
+                <label for="">Celular:</label><input type="text" name="" id="">
+                <label for="">Whatsapp:</label><input type="text" name="" id="">
+            </div>            
+            <div class="row">
+                <label for="">Linkedin:</label><input type="text" name="" id="">
+                <label for="">Github:</label><input type="text" name="" id="">
+            </div>
+        </fieldset>               
+        <div class="row">
+            <button type="reset">Limpar</button>
+            <button type="submit">Enviar</button>
+        </div>            
+    </form>
+    <p>Tag &lt;embed&gt; está em desuso!</p>
+    <embed src="fs2020.m4v" type="video" width="560" height="315"><br>
+
+    <p>Tag &lt;video&gt;</p>
+    <video controls width="560" height="315">
+        <source src="fs2020.m4v">
+    </video><br>
+
+    <p>Tag &lt;iframe&gt;</p>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/6j4C5iih43k" title="YouTube video player" 
+    frameborder="0" allow="autoplay; encrypted-media; picture-in-picture" allowfullscreen></iframe>
+</body>
+</html>
