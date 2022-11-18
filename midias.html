@@ -7,18 +7,21 @@
     <title>Mídias</title>
     <style>
         body{
-            background-color: blueviolet;
+            background-color: rgb(150, 109, 247);
         }
     </style>
 </head>
 <body>
+    
     <h2>Imagens</h2>
 
     <img src="qissojovi.jpg" title="Que isso jovi" width="400" alt="Que é isso jovi!"><br>
     <img src="racing.png" width="400" alt=""><br>
+    <p>SVG carregado em outra requisição</p>
     <img src="painel.svg" width="400" alt=""> <!--Aqui o brwoser faz duas requisições uma no html e outra pra buscar o SVG-->
     
-    <!--Aqui o browser carrega o arquivo direto-->
+    <!--Aqui o browser carrega o arquivo direto-->    
+    <p>SVG carregado diretamente no html</p>
     <div style="width: 400px;">
         <svg version="1.1" baseProfile="basic" id="Camada_1"
         xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 595.3 841.9"
@@ -57,17 +60,23 @@
         L325.3,471.2z M326.1,436.2l-7.4,0.5l0.3-15.1c-0.1-0.9,0.7-3.5,0.9-4l4.5-10.5c0.2-0.4,0.6-0.6,1-0.5l1.1,0.2L326.1,436.2z"/>
         </svg>
     </div>
-<h2>Áudio</h2>
-<audio controls>
-    <source src="vaidarm.mp3" />
-    Seu navegador não tem suporte para este áudio.
-</audio>
 
-<h2>Video</h2>
-<video controls width="400">
-    <source src="fs2020.m4v"/>
-    <track default src="legenda.vtt" kind="captions" srclang="pt-br" />
-    Seu navegador não suporta vídeo.
-</video>
+    <h2>Áudio</h2>
+    <audio controls>
+        <source src="vaidarm.mp3" />
+        Seu navegador não tem suporte para este áudio.
+    </audio>
+
+    <h2>Video</h2>
+    <video controls width="400">
+        <source src="fs2020.m4v" />
+        <track default src="legenda.vtt" kind="captions" srclang="pt-br" />
+        Seu navegador não suporta vídeo.
+    </video>
+
+    <h2>Iframe</h2>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/0nAB2GfqSkk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d53251.61911454585!2d-35.87357046028143!3d-7.2465001623142244!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1spt-BR!2sbr!4v1668740370269!5m2!1spt-BR!2sbr" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
 </body>
 </html>
