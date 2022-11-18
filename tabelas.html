@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas</title>
+    <style>
+        table {
+            border: solid 1px black;
+            -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.33);
+            -moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.33);
+            box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.33);
+            padding: 0px;
+            margin: 0px;
+        }
+        table thead th{
+            background-color: coral;            
+        }
+        table tfoot td{
+            background-color: rgb(40, 29, 53);
+            color: white;
+        }
+        table tbody tr:nth-child(even){
+            background-color: rgb(162, 145, 189);
+        }
+        table tbody tr:hover td{
+            background-color: rgb(114, 0, 245);
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <p>Tabela Normal</p>
+    <table summary="Descrição para leitor de tela">
+        <tr>
+            <th title="Nome Completo">Nome</th>
+            <th>Idade</th>
+        </tr>
+        <tr>
+            <td>Judenilson</td>
+            <td>40</td>
+        </tr>
+        <tr>
+            <td>Maria</td>
+            <td>25</td>
+        </tr>
+        <tr>
+            <td>José</td>
+            <td>22</td>
+        </tr>
+        <tr>
+            <td>Biu</td>
+            <td>33</td>
+        </tr>
+        <tr>
+            <td>Severina</td>
+            <td>19</td>
+        </tr>
+        <tr>
+            <td>Toinho</td>
+            <td>21</td>
+        </tr>
+    </table>
+    <p>Tabela do jeito semântico</p>
+    <table summary="Descrição para leitor de tela" cellspacing="0" cellpadding="5">
+        <thead>
+            <tr colspan="2"> 
+                <th>Minha Tabela</th>
+            </tr>
+            <tr>
+                <th title="Nome Completo">Nome</th>
+                <th>Idade</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Judenilson</td>
+                <td>40</td>
+            </tr>
+            <tr>
+                <td>Maria</td>
+                <td>25</td>
+            </tr>
+            <tr>
+                <td>José</td>
+                <td>22</td>
+            </tr>
+            <tr>
+                <td>Biu</td>
+                <td>33</td>
+            </tr>
+            <tr>
+                <td>Severina</td>
+                <td>19</td>
+            </tr>
+            <tr>
+                <td>Toinho</td>
+                <td>21</td>
+            </tr>
+        </tbody>
+        <tfoot>            
+            <tr>
+                <td>Total</td>
+                <td>6</td>
+            </tr>
+        </tfoot>
+    </table>
+</body>
+</html>
